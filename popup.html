@@ -1,0 +1,70 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <style type="text/css">
+        body {
+            overflow: hidden;
+            margin: 0px;
+            padding: 0px;
+            background: white;
+        }
+
+        .tbRow {
+            display: table-row;
+            width: 200px;
+        }
+
+        .tbCell {
+            display: table-cell
+        }
+
+        .tbName {
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        .tbValue {
+        }
+
+        #names {
+            width: 300px;
+        }
+
+        #values {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    <script type="text/jscript" src="popup.js"></script>
+</head>
+<body>
+<div class="tbRow">
+    <div class="tbCell tbName">split:</div>
+    <div class="tbCell tbValue">
+        <input type="radio" id="split0" name="split" value="|" checked="checked"/>|
+        <input type="radio" id="split1" name="split" value=":"/>:
+        <input type="radio" id="split2" name="split" value=","/>,
+    </div>
+</div>
+<div class="tbRow">
+    <div class="tbCell tbName">keys:</div>
+    <div class="tbCell tbValue">
+        <input type="text" id="names" name="names"/>
+    </div>
+</div>
+<div class="tbRow">
+    <div class="tbCell tbName">values:</div>
+    <div class="tbCell tbValue">
+        <textarea type="text" id="values" id="values"></textarea>
+    </div>
+</div>
+<div class="tbRow">
+    <div class="tbCell tbName"></div>
+    <div class="tbCell tbValue">
+        <input id="btnFill" type="button" value="填写"/>
+    </div>
+</div>
+</body>
+</html>
